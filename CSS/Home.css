@@ -1,0 +1,595 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    height: 100vh;
+    width:100vw;
+}
+
+header
+{
+    width:20vw;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: linear-gradient(rgb(8, 8, 97),rgb(8, 8, 71));
+    
+}
+
+    #profileimg
+    {
+        width:200px;
+        height: 200px;  
+    }
+
+    .profile h3
+    {
+        /* color: rgb(15, 202, 187); */
+        color: rgb(235, 235, 103);
+        padding: 2px;
+    }
+
+    nav button
+    {
+        position: fixed;
+        top: 10px;
+        right:10px;
+    }
+
+    nav
+    {
+        background: linear-gradient(rgb(9, 9, 77),rgb(9, 9, 124));
+    }
+        
+
+        ul li
+        {
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        li a
+        {
+            color: rgb(135, 159, 224);
+            font-family:'Lucida Sans';
+            font-size:1.1rem;
+        }
+    
+        li a i
+        {
+            padding-left: 15px;
+            vertical-align:middle;
+        }
+
+        li a span
+        {
+            padding-left: 5px;
+            vertical-align:middle;
+        }
+        
+section
+{
+    width: 80vw;
+    height: 100vh;
+    margin-left: 20vw;
+    background: linear-gradient(rgb(8, 8, 70), rgb(31, 31, 150),rgb(22, 112, 197));
+    transition: ease-in-out 0.5s;
+    z-index:1;
+}
+
+    section .heading
+    {
+        height: 14%;
+        color:rgb(238, 158, 10);
+        text-align: center;
+        padding-top: 2%;
+            
+    }
+
+    /*----------------------Home Section------------------------*/
+
+    #home #headimage
+    {
+        width: 170px;
+        height: 170px;
+    }
+   
+    #home .hi
+    {
+        position: relative;
+        right:22%;
+        font-size: 20px;
+        /* color: aqua; */
+        color:rgb(157, 243, 239);
+    }
+
+    #home div .head
+    {
+        font-size: 40px;
+        /* color: rgb(235, 76, 150); */
+        font-family:'Franklin Gothic Medium';
+        color: rgb(241, 221, 37);
+    
+    }
+
+    #home .dtls
+    {
+        font-size: 18px;
+        word-spacing: 1.5px;
+        letter-spacing: 0.8px;
+        /* color: aqua; */
+        color: rgb(157, 243, 239);
+    }
+
+    #home .social-links 
+    {
+        font-size: 25px;
+    }
+
+        #home .social-links a
+        {
+            color: rgb(90, 157, 235);
+            padding-inline: 18px;
+        }
+
+        #home .social-links a:hover
+        {
+            font-size: 30px;
+            color: rgb(15, 176, 240);
+        }
+
+    /*-------------------Home Section Ends----------------------*/   
+
+    /*-------------------About Section----------------------*/    
+
+        #about .row
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        
+        #about .row .box
+        {
+            background:rgb(11, 50, 177); 
+            margin-bottom: 40px;
+            margin-inline: 10px;
+            width:28%;
+            box-sizing:border-box;
+            text-align: center;
+            padding: 5px;
+        }
+
+            #about .row .box p
+            {
+                font-size: 1.4rem;
+                color:rgb(231, 193, 193);
+                padding-bottom: 15px;
+            }
+                
+            #about .row .box h5
+            {
+                font-size: 1.8rem;
+                color:rgb(255, 217, 0);
+                padding-bottom: 10px;
+            }
+
+        #about .cv button
+        {
+            background-color: rgb(82, 79, 79);
+            border-radius: 10px;
+            padding: 8px;
+            color: rgb(226, 216, 216);
+            font-weight: 600;
+        
+        } 
+
+            #about .cv button:hover
+            {
+                background-color: rgb(63, 61, 61);
+            }
+
+/*------------------About section ends -------------------*/
+
+/*------------------Education Section -------------------*/
+
+.education .box-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 4%;
+}
+
+.education .box-container .box
+{
+    width:40%;
+    margin:3% 5%;
+    padding-left: 5%;
+    border-left: 4px solid rgb(240, 10, 201);
+    position: relative;
+}
+
+    .education .box-container .box span
+    {
+        font-size: 1rem;
+        background:rgb(23, 3, 78);
+        color:#fff;
+        border-radius: 5rem;
+        padding:3% 8%;
+    }
+
+    .education .box-container .box h3
+    {
+        font-size: 1.5rem;
+        color:rgb(255, 217, 0);
+        padding-top: 8%;
+    }
+
+    .education .box-container .box p
+    {
+        font-size: 1.1rem;
+        color:#eee;
+        padding: 5% 0;
+    }
+
+    .education .box-container .box i
+    {
+        position: absolute;
+        top:-1.6rem; left:-1.4rem;
+        font-size: 2rem;
+        color:rgb(240, 10, 201);
+        
+    }
+/*------------------Education section ends -------------------*/
+
+/*------------------My Works section -------------------*/
+
+.myworks .box-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2% 0;
+}
+
+.myworks .box-container .box
+{
+    height:35%;
+    width:35%;
+    margin-inline: 5%;
+    margin-bottom: 4%;
+    cursor: pointer; 
+}
+
+    .myworks .box-container .box img
+    {
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+
+    .myworks .box-container .box p
+    {
+        font-size: 1.4rem;
+        text-align: center;
+        padding-top: 0.7rem;
+        color:rgb(255, 217, 0);
+        font-weight: 600;
+    }
+
+    .myworks .box-container .box:hover img
+    {
+        transform: scale(1.1);
+    }
+
+/*------------------My Work section ends -------------------*/
+
+/*------------------Contact section-------------------*/
+.contact .box-container
+{
+    display: flex;
+    align-items: center;
+    width:100%;
+    flex-wrap: wrap;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-left: 9%;
+}
+
+.contact .box-container .box
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 3%;
+    width: 53%;
+}
+
+    .contact .box-container .box h4
+    {
+        color: rgb(240, 240, 24);
+    }
+
+    .contact .box-container .box h4 span
+    {
+        padding-left: 5px;
+    }
+
+    .contact .box-container .box p
+    {
+        color: beige;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+/*------------------Contact section ends-------------------*/
+
+
+@media (max-width:2900px) and (min-width:576px)
+{
+    #home #headimage
+    {
+        display: none;
+                
+    }
+}
+
+@media (max-width:1025px)
+{
+    #profileimg
+    {
+        width:150px;
+        height: 150px;   
+    }
+
+        #about .row .box h5
+        {
+            font-size: 1.5rem;
+        }
+
+        .contact .box-container .box
+        {
+        margin-right: 3%;
+        width:50%;
+        }
+}
+
+@media (max-width:800px)
+{
+    header
+    {
+        width:21vw;
+    }
+
+    #profileimg
+    {
+        width:110px;
+        height:110px;
+        
+    }
+
+        .profile h3
+        {
+            font-size:22px;
+        }
+    
+    ul li
+    {
+        padding-left: 5px;
+    }
+
+    li a
+    {
+        font-size:0.85rem;
+    }
+
+        i
+        {
+            padding-left: 2px;
+        }
+
+        li a span
+        {
+            padding-left: 2px;
+        }
+        
+    #home .hi
+    {
+        display: none;
+    }
+
+    #home div .head
+    {
+        font-size: 32px;
+    }
+
+    #home .dtls
+    {
+        font-size: 14px; 
+    }
+
+    #home .social-links 
+    {
+        
+        font-size: 20px;    
+    }
+
+        #about .row .box
+        {
+            width:45%;
+            margin-bottom: 15px;
+        }
+
+        #about .row .box p
+        {
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+        }
+            
+        #about .row .box h5
+        {
+            font-size: 1.4rem;
+            padding-bottom: 3px;
+        }
+
+    .education .box-container .box span
+    {
+        font-size: 0.8rem;
+    }
+        
+    .education .box-container .box h3
+    {
+        font-size: 1.2rem;
+    }
+        
+    .education .box-container .box p
+    {
+        font-size: 0.9rem;
+    }
+        
+        .contact .box-container .box h4
+        {
+            font-size: 20px;
+        }
+        
+        .contact .box-container .box p
+        {
+            padding-bottom: 15px;
+            font-size: 16px;
+        }
+        
+}
+
+@media (max-width:576px)
+{
+    
+    .navbar
+    {
+        position:fixed;
+        top:20px;
+        right:20px;
+    }
+
+    ul li
+    {
+        padding-bottom: 7px; 
+    }
+
+    .profile 
+    {
+        display: none;
+    }
+
+    header 
+    {
+        width:0vw;
+        height: 0vh;
+    }
+
+    section
+    {
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0vw; 
+    }
+
+    section .heading
+    {
+        height: 8%;
+        font-size: 1.5rem;
+        padding-top: 2%;
+            
+    }
+    
+        #home div .head
+        {
+            font-size: 28px;
+        }
+
+        #home .dtls
+        {
+            word-spacing: 1px;
+        }
+
+        #home .social-links 
+        {
+            font-size: 18px;    
+        }
+    
+        #home .social-links a
+        {
+            padding-inline: 16px;
+        }
+       
+    #about .row .box
+    {
+        width:45%;
+        margin-inline: 5px;
+        margin-bottom: 15px;
+    }
+
+    #about .row .box p
+    {
+        font-size: 0.97rem;
+        padding-bottom: 10px;
+    }
+                
+    #about .row .box h5
+    {
+        font-size: 1.07rem;
+        padding-bottom: 3px;
+    }
+
+        .education .box-container .box
+        {
+            width:100%;
+            margin:2.5% 5%;
+        }
+
+        .education .box-container .box span
+        {
+            font-size: 0.7rem;
+            padding:1% 5%;
+        }
+            
+        .education .box-container .box h3
+        {   
+            padding-top: 2%;
+            font-size: 1rem;
+        }
+            
+        .education .box-container .box p
+        {
+            font-size: 0.8rem;
+            padding: 0 0;
+        }
+
+        .education .box-container .box i
+        {
+            position: absolute;
+            top:-0.4rem; left:-1rem;
+            font-size: 1.2rem;
+        }
+
+    .contact .box-container .box
+    {
+        width:60%;
+        padding-top: 2%;
+    }       
+
+}
+
+
+
